@@ -1,0 +1,718 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.row{
+    display: flex;
+}
+/* ----------------------nav section Start---------------------- */
+nav{
+    background-color: #1C1E53;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+   align-items: center;
+}
+.navbar-brand{
+    width: 20%;
+    padding: 20px 0;
+}
+.navbar-nav{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 48px;
+}
+.navbar-nav ul{
+    display: flex;
+    column-gap: 32px;
+}
+.navbar-nav ul a{
+    color: #BBBBCB;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .4s;
+}
+.navbar-nav ul a:hover{
+    color: #ffff;
+}
+.acetive{
+    color: #fff !important;
+}
+.countract-btn a{
+    padding: 10px 40px;
+    border: 1px solid rgba(244, 246, 252, 0.5);
+    border-radius: 41px;
+    transition: .4s;
+}
+.countract-btn a:hover{
+    background-color: #fff;
+    color: #1C1E53;
+}
+/* =============================================
+banner Section Start
+================================================= */
+.banner{
+    width: 100%;
+    background-color: #1C1E53;
+    padding: 86px 0 138px 0;
+}
+.banner-left{
+    width: 50%;
+}
+.banner-left h1{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+    color: #fff;
+}
+.banner-left p{
+    font-size: 16px;
+    line-height: 24px;
+    width: 562px;
+    color: #BBBBCB;
+    margin: 24px 0 48px 0;
+}
+.banner-btn-1{
+    padding: 10px 40px;
+    border: 1px solid rgba(244, 246, 252, 0.5);
+    border-radius: 41px;
+    transition: .4s;
+    background-color: #FCD980;
+    transition: .4s;
+}
+.banner-btn-1:hover{
+    background-color: #fff;
+    color: #1C1E53;
+}
+.banner-btn-2{
+    margin-left: 32px;
+}
+.banner-btn-2 i{
+    padding-left: 10px;
+}
+.banner-right{
+    width: 50%;
+}
+.banner-right img{
+    width: 100%;
+}
+/* =============================================
+banner Section End
+================================================= */
+/* =============================================
+work Section Start
+================================================= */
+.work{
+    background-color: #F4F6FC;
+    padding: 128px 0;
+}
+.work-left{
+    width: 50%;
+  
+}
+.work-left h2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: #282938;
+}
+.work-left p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #282938;
+    width: 405px;
+    margin: 14px 0 16px 0;
+}
+.work-btn-2{
+    color: #2405F2;
+}
+.work-right{
+    width: 50%;
+}
+.work-right .row{
+    flex-wrap: wrap;
+}
+.work-right h3{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #282938;
+}
+.work-right p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    width: 303px;
+    color: #282938;
+}
+.work-right .item{
+    margin-bottom: 48px;
+}
+/* =============================================
+work Section End
+================================================= */
+/* =============================================
+Projects Section Start
+================================================= */
+.projects{
+    padding: 128px 0;
+}
+.projects img{
+    width: 100%;
+   display: block;
+}
+.projects .row{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+}
+.projects .row h2,
+.projects .row i{
+    color: #282938;
+}
+.projects-img-left{
+    width: 843px;
+    position: relative;
+    overflow: hidden;
+}
+.card-overley{
+    position: absolute;
+    width: 52%;
+    height: 100%;
+    background: linear-gradient( rgba(24, 28, 130, 0.42),#1C1E53);
+    top: 0;
+    left: -52%;
+    transition: 2s;
+}
+.projects .card-overley .text{
+    margin-top: 75%;
+    color: #ffff;
+    padding: 0 60px;
+}
+.projects .card-overley .text h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    width: 331px;
+}
+.projects .card-overley .text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 293px;
+    margin: 16px 0 40px 0;
+}
+.projects-img-left:hover .card-overley{
+    left: 0;
+}
+.projects .text a,
+.projects .text a i{ 
+    color: #FCD980;
+}
+.projects-img-right{
+    width: 414px;
+}
+.projects-img-right .card-top{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.projects-img-right .card-top .right-card-overley{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(24, 28, 130, 0.42),#1C1E53);
+    left: 0;
+    top: -100%;
+    transition: 2s;
+}
+.projects-img-right .card-top:hover .right-card-overley{
+    top: 0;
+}
+.projects-img-right .card-top .right-card-overley .text{
+    margin-top: 129px;
+    padding: 0 60px;
+}
+.card-top .right-card-overley .text h3{
+    color: #ffff;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    width: 213px;
+}
+.projects-img-right .mt{
+    margin: 0 0 19px 0;
+}
+
+/* =============================================
+Projects Section End
+================================================= */
+
+/* =============================================
+service Section start
+================================================= */
+.service{
+    background-color: #F4F6FC;
+    padding: 128px 0;
+}
+.service-top {
+    width: 100%;
+    text-align: center;
+    color: #282938;
+    width: 630px;
+    margin: 0 auto;
+}
+.service-top p{
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 600;
+}
+.service-top h2{
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 600;
+    margin: 12px 0 48px 0;
+}
+.service .row{
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.service-item{
+    width: 32%;
+    padding: 48px;
+    background-color: #fff;
+}
+.service-item i{
+    color: #2405F2;
+    font-size: 22px;
+}
+.service-item h3{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #282938;
+    margin: 15px 0 10px 0; 
+}
+.service-item p{
+    color: #282938;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+/* =============================================
+service Section End
+================================================= */
+/* =============================================
+testimonial Section start
+================================================= */
+.testimonial{
+    padding: 128px 0;
+    background-color: rgba(244, 246, 252, 0.4);
+}
+.testimonial-left{
+    color:#282938; 
+    width: 30%;
+}
+.testimonial-left h2{
+    font-size: 38px;
+    line-height: 56px;
+    font-weight: 600;
+    
+}
+.testimonial-left p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.testimonial-right{
+    width: 70%;
+    color: #282938;
+    padding-left: 60px;
+}
+.testimonial-right h3{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    margin-bottom: 48px;
+}
+.testmonial-info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 76px;
+    position: relative;
+}
+.testmonial-info-left img{
+position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+.testmonial-info-left h6{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.testmonial-info-left p{
+    font-size: 12px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.testmonial-info-right{
+    margin-top: 3px;
+}
+.testmonial-info-right i{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    margin-left: 10px;
+    font-size: 22px;
+    color: #2405F2;
+    transition: .4s;
+}
+.testmonial-info-right i:hover{
+    color: #fff;
+    background-color: #2405F2;
+}
+/* =============================================
+testimonial Section End
+================================================= */
+/* =============================================
+frequently Section Start
+================================================= */
+.frequently{
+    padding: 129px 0;
+}
+.freq-left{
+    width: 50%;
+}
+.freq-left h2{
+    font-size: 38px;
+    line-height: 56px;
+    font-weight: 600;
+    width: 328px;
+    color: #282938;
+    padding-bottom: 16px;
+    margin-top: 10px;
+}
+.freq-left a{
+    color: #2405F2;
+}
+.freq-right{
+    width: 50%;
+}
+.freq-right h2{
+    color: #282938;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 20px 0;
+    width: 100%;
+    text-align: left;
+    background-color: #fff;
+    border-bottom: 1px solid #BBBBCB;
+    cursor: pointer;
+}
+.freq-right h2 span {
+    color: #2405F2;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 0 40px 0 10px;
+}
+.freq-right h2::after{
+    content: '\002b';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+}
+.active:after {
+    content: "\2212";
+  }
+.freq-right p{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    width: 600px;
+}
+.faq-contant{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #282938;
+    width: 624px;
+    margin-left: 70px;
+    display: none;
+}
+/* =============================================
+frequently Section End
+================================================= */
+/* =============================================
+contract Section Start
+================================================= */
+
+.contract-left{
+    width: 50%;
+    background: url(../images/contarct.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 96px 96px 48px 96px;
+   position: relative;
+}
+/* .contract-left::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 1, 1, 0.2);
+} */
+.contract-left h2{
+    font-size: 54px;
+    line-height: 74px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+    z-index: 999;
+}
+.contract-left p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+}
+.contract-right{
+    width: 50%;
+    background-color: #1C1E53;
+    padding: 96px 96px 48px 96px;
+}
+.contract-right h2{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #fff;
+}
+.contract-right p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #a3a4a5;
+    margin-bottom: 40px;
+}
+::placeholder{
+    color: #777;
+}
+.contract-right input[type=url],
+.contract-right input[type=email],
+.contract-right input[type=text]{
+    background-color: #1C1E53;
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid rgba(119, 114, 114, 0.8);
+    margin-bottom: 20px;
+}
+.contract-right a{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.contarct-sent{
+    padding: 16px 150px;
+    border: none;
+    background-color: #FCD980;
+    color: #1B1C2B;
+    border-radius: 41px;
+    margin-bottom: 28px;
+    transition: .4s;
+}
+.contarct-sent-2 i{
+    margin-left: 20px;
+    text-align: center;
+}
+.contarct-sent-2:hover{
+    color: #2405F2;
+}
+.contarct-sent:hover{
+    background-color: #fff;
+    color: #2405F2;
+}
+/* =============================================
+contract Section End
+================================================= */
+/* =============================================
+blog Section End
+================================================= */
+.blog{
+    padding: 128px 0;
+}
+.blog h2{
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 600;
+    color: #282938;
+    margin-bottom: 64px;
+}
+.blog .row{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog-item{
+    width: 32%;
+    color: #282938;
+}
+.blog-item img{
+    width: 100%;
+    height: 285px;
+}
+.blog-item h6{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.blog-item h3{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.blog-item p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.blog-item a{
+    color: #282938;
+}
+
+/* =============================================
+blog Section End
+================================================= */
+
+/* =============================================
+footer Section start
+================================================= */
+footer{
+    background-color: #1C1E53;
+    padding-top: 100px;
+}
+.footer-left{
+    width: 50%;
+}
+.footer-left .contarct-p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+    padding:  28px 0 86px 0;
+    width: 399px;
+}
+.footer-left-contarct{
+    background-color: #FCD980;
+    display: flex;
+    column-gap: 30px;
+    padding: 18px 37px 16px 37px;
+    width: 517px;
+}
+.footer-left-contarct h6{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #282938;
+}
+.footer-left-contarct p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #282938;
+}
+.footer-right{
+    width: 50%;
+}
+.footer-right h2{
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 600;
+    color: #fff;
+}
+.footer-right p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    width: 399px;
+    color: #F4F6FC;
+    padding: 18px 0 28px 0;
+}
+.footer-right i{
+    margin-right: 26px;
+    font-size: 26px;
+    transition: .4s;
+}
+/* =============================================
+footer Section End
+================================================= */
+/* =============================================
+footer bottom Section start
+================================================= */
+.footer-bottom{
+    background-color: #fff;
+    padding: 32px 0;
+}
+.footer-bottom-left{
+    float: left;
+    width: 50%;
+    color: #282938;
+}
+.footer-bottom-right{
+    width: 50%;
+}
+.footer-bottom-right ul{
+    display:flex;
+    justify-content: end;
+    column-gap: 32px;
+}
+.footer-bottom-right ul li a,
+.footer-bottom-right ul li p{
+    color: #282938;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    transition: .4s;
+}
+.footer-bottom-right ul li a:hover{
+    color: #FCD980;
+}
+/* =============================================
+footer bottom Section End
+================================================= */
+
+
